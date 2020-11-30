@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator || by (timmi's)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left">
+        <h1 class="l">Calculator</h1>
+    </div>
+    <div class="container">
+        <h1></h1>
+
+        <form action="" name="form">
+            
+            <input type="text" name="val" class="value" id="val" readonly="">
+       <br>  
+
+            <input type="button"  class="input" id="CE" value="CE" onclick="form.val.value = '' ">
+            <input type="button" class="input" value="C" onclick="form.val.value = '' ">
+            <input type="button" class="input" value="/" onclick="form.val.value += '/' ">
+       <br>
+            <input type="button" class="input" value="7" onclick="form.val.value += '7' ">
+            <input type="button" class="input" value="8" onclick="form.val.value += '8' ">
+            <input type="button" class="input" value="9" onclick="form.val.value += '9' ">
+            <input type="button" class="input" value="*" onclick="form.val.value += '*' ">
+       <br>
+            <input type="button" class="input" value="4" onclick="form.val.value += '4' ">
+            <input type="button" class="input" value="5" onclick="form.val.value += '5' ">
+            <input type="button" class="input" value="6" onclick="form.val.value += '6' ">
+            <input type="button" class="input" value="+" onclick="form.val.value += '+' ">
+            <br>
+            <input type="button" class="input" value="1" onclick="form.val.value += '1' ">
+            <input type="button" class="input" value="2" onclick="form.val.value += '2' ">
+            <input type="button" class="input" value="3" onclick="form.val.value += '3' ">
+            <input type="button" class="input" value="-" onclick="form.val.value += '-' ">
+      <br>
+            <input type="button" class="input" value="0" onclick="form.val.value += '0' ">
+            <input type="button" class="input" value="00" onclick="form.val.value += '00' ">
+            <input type="button" class="input" value="." onclick="form.val.value += '.' ">
+            <input type="button"  class="input" id="equal" value="=" onclick="form.val.value = eval(form.val.value) ">
+            
+        </form>
+    </div>
+    <div class="right">
+        <h1 class="r">Calculator</h1>
+    </div>
+</body>
+</html>
